@@ -1,0 +1,39 @@
+<!doctype html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css3.css"/>
+	<title>CSS Transforms and Transitions</title>
+	 <style>
+	#box {
+	position: absolute; 
+	top: 100px;
+	left: 100px; 
+	width: 200px; 
+	height: 200px;
+	background-color: blue;
+	
+	transition: transform 3s;
+	-webkit-transition: -webkit-transform 3s;
+	-moz-transition: -moz-transform 3s; 
+	-o-transition: -o-transform 3s;
+	} 
+
+	#box:hover {
+	opacity: 0.5;
+	width: 400px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg); 
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	} 
+	</style>
+</head>
+     <body>
+		<p>
+			This is an example of CSS3 using Transforms & Transitions. It uses the CSS properties transition, transform, duration, opacity and width to alter the square when the user 'hovers' the pointer of the square.
+		</p>
+		<div id="box"><img src="cs3.jpg"/></div>
+	 </body>
+</html>
